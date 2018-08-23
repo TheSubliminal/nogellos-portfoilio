@@ -10,10 +10,75 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
- 
-@import "bootstrap-sprockets";
+
 @import "bootstrap";
 
+
+// Typography styles
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+body, .navbar {
+  background-image: url("https://lh3.googleusercontent.com/uEHmRXeYptBwLRdYqfHw6_PbfBhd8X-rM5zhCeo-CLDYXwgDTX1ebnv_7vfZCurB9qcmXdlPmZuy5xcIlOKayv1EuTWz95EpNoAqzxGO2L-rtqopQwyQCo8UM2qtnOuwEtWkEDAJDHiIlR-saFzWzRXajbkddekazwSox8IxKPHtkce4SXuvTeY6rG8Yh6Vxday1oTQIGB0ksbooQMCNeJZnhKbACP65XTlyWKbhBgWGgT2a344ceHIb6wwEfntrMM2APdwG-Jpne2IuD0DOvVXqBEeOAUtcx1A2sFSPC7gmc-e2WiGCZS-wIK2tTMLA1zo4OseMmJRg3AtQl27HbpbdwmiTAfpuP_5JFP4x1VxR68q3ddGJrysaQqB9s0MJKupCPmJDGvga5CHo6DLXXZk9O698761afaWyD4b8rMvZSxj280AzNzSujkedGp-A5O1SCB2DWUoTMioifVnkumlCq8PWtjOdcDp_Ma3637e0G9clUBNHPMcTxdrKdBMbjRZD_wO6hZ5LM0VQbOU31S5OJ74XM8o6vsOeRDd1dDQtugAvVFbeIyPGz6Q6hJJKrBJ9a-bSBLs81RdsRt1FRUzVNl_Yve-r0Z4gGEE=w1078-h773-no");
+  background-position: center; /* Center the image */
+  background-size: cover; 
+}
+
+.navbar {
+  display: none;
+  border: none;
+}
+
+.home-callout {
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.portfolio-box {
+  margin-left: 90px;
+  margin-top: 115px;
+  h1 {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+    border: 4px solid black;
+  }
+}
+
+.leaves-img {
+  position: absolute;
+  transform: rotate(90deg);
+  margin-left: 150px;
+  width: 150px;
+}
+
+.portrait-img {
+  transform: rotate(20deg);
+  width: 500px;
+  height: 500px;
+}
+
+.nogellos-img {
+  height: 400px;
+}
+
+.link {
+  font-family: 'Indie Flower', cursive;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  &:hover {
+    
+  }
+  &.works {
+    margin-left: 150px;
+    margin-top: 150px;
+  }
+  &.contact-me {
+    font-size: 65px;
+  }
+}
