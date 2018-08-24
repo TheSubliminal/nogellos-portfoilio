@@ -17,19 +17,19 @@
 
 // Typography styles
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Indie Flower', cursive;
   font-weight: 400;
 }
 
-body, .navbar {
+body {
   background-image: url("https://lh3.googleusercontent.com/Pdv83g-SRmxZAoxwzvkHrQPEkbgiZE1a39i1F29zQI14jCGAZaefCGRH5bCiIYnDzF8CFgcIGGJ1vWCiVvDtSuTbtjNZtV-1sG7vCvaQT7SPEKAhVp63EOfwFLVK9jaJ0p8tRWpOKBok4Ug_20-6AnUwZKsK1Ek5quXV7yZ8XB6Dcq5W21nMoWSrWDh8UW2WO7uyfRGlUmCKHnt6nP0wOYQ5PXfFij_GHC8q48p-R_3SH21wKatTyKWSqcl8cCQaypoitGTcAuK-4T3j8RM-KueQ0G1TLWhdls6y91tweE2E2DsqjFXWoeQTOK3MbmVLm2eWTr0cTsvBx4sJydlPgid99MTKkoKcb_HoKs1wD_WePm6vxg_RQZsHstO6EiCtEEoW1cy35g9Bb97FuZAaDbqP4ujEpjGbi1LrBA-jkOl8r6pE0iXaSMZxqp-d2YdzUE8eL7__BXUe4R6KzQEL2f5e4B7pi03C73YE5c1ZYbuM8w6E2mtBxLNC7pcb78uChmn-5fI61HJMl48rbP_TZsrKU9---KYCcvNa64OiQFQvNKbAAtaBLOIvazPK_6PY61E2SFQC4w5iS11zABXKY90GJPhBw0JYLunUej9gxp6bmhy6c3Gfmc6Rt-OFZ38=w1269-h910-no");
   background-position: center; /* Center the image */
   background-size: cover; 
 }
 
 .navbar {
-  display: none;
   border: none;
+  background-color: rgba(185, 178, 178, 0);
 }
 
 .home-callout {
