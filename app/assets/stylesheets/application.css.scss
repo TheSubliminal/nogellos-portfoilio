@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 body, .navbar {
-  background-image: url("https://lh3.googleusercontent.com/uEHmRXeYptBwLRdYqfHw6_PbfBhd8X-rM5zhCeo-CLDYXwgDTX1ebnv_7vfZCurB9qcmXdlPmZuy5xcIlOKayv1EuTWz95EpNoAqzxGO2L-rtqopQwyQCo8UM2qtnOuwEtWkEDAJDHiIlR-saFzWzRXajbkddekazwSox8IxKPHtkce4SXuvTeY6rG8Yh6Vxday1oTQIGB0ksbooQMCNeJZnhKbACP65XTlyWKbhBgWGgT2a344ceHIb6wwEfntrMM2APdwG-Jpne2IuD0DOvVXqBEeOAUtcx1A2sFSPC7gmc-e2WiGCZS-wIK2tTMLA1zo4OseMmJRg3AtQl27HbpbdwmiTAfpuP_5JFP4x1VxR68q3ddGJrysaQqB9s0MJKupCPmJDGvga5CHo6DLXXZk9O698761afaWyD4b8rMvZSxj280AzNzSujkedGp-A5O1SCB2DWUoTMioifVnkumlCq8PWtjOdcDp_Ma3637e0G9clUBNHPMcTxdrKdBMbjRZD_wO6hZ5LM0VQbOU31S5OJ74XM8o6vsOeRDd1dDQtugAvVFbeIyPGz6Q6hJJKrBJ9a-bSBLs81RdsRt1FRUzVNl_Yve-r0Z4gGEE=w1078-h773-no");
+  background-image: url("https://lh3.googleusercontent.com/Pdv83g-SRmxZAoxwzvkHrQPEkbgiZE1a39i1F29zQI14jCGAZaefCGRH5bCiIYnDzF8CFgcIGGJ1vWCiVvDtSuTbtjNZtV-1sG7vCvaQT7SPEKAhVp63EOfwFLVK9jaJ0p8tRWpOKBok4Ug_20-6AnUwZKsK1Ek5quXV7yZ8XB6Dcq5W21nMoWSrWDh8UW2WO7uyfRGlUmCKHnt6nP0wOYQ5PXfFij_GHC8q48p-R_3SH21wKatTyKWSqcl8cCQaypoitGTcAuK-4T3j8RM-KueQ0G1TLWhdls6y91tweE2E2DsqjFXWoeQTOK3MbmVLm2eWTr0cTsvBx4sJydlPgid99MTKkoKcb_HoKs1wD_WePm6vxg_RQZsHstO6EiCtEEoW1cy35g9Bb97FuZAaDbqP4ujEpjGbi1LrBA-jkOl8r6pE0iXaSMZxqp-d2YdzUE8eL7__BXUe4R6KzQEL2f5e4B7pi03C73YE5c1ZYbuM8w6E2mtBxLNC7pcb78uChmn-5fI61HJMl48rbP_TZsrKU9---KYCcvNa64OiQFQvNKbAAtaBLOIvazPK_6PY61E2SFQC4w5iS11zABXKY90GJPhBw0JYLunUej9gxp6bmhy6c3Gfmc6Rt-OFZ38=w1269-h910-no");
   background-position: center; /* Center the image */
   background-size: cover; 
 }
@@ -49,11 +49,19 @@ body, .navbar {
   }
 }
 
-.leaves-img {
+.leaves-img-works {
   position: absolute;
   transform: rotate(90deg);
   margin-left: 150px;
   width: 150px;
+}
+
+.leaves-img-contact-me {
+  position: absolute;
+  margin-top: -155px;
+  margin-left: -40px;
+  transform: rotate(-90deg);
+  width: 200px;
 }
 
 .portrait-img {
@@ -67,6 +75,9 @@ body, .navbar {
 }
 
 .link {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
   font-family: 'Indie Flower', cursive;
   font-size: 100px;
   font-weight: bold;
@@ -75,10 +86,13 @@ body, .navbar {
     
   }
   &.works {
-    margin-left: 150px;
-    margin-top: 150px;
+    top: 75px;
+    left: 120px;
+    letter-spacing: 24px;
   }
   &.contact-me {
-    font-size: 65px;
+    display: inline;
+    top: 20px;
+    left: -180px;
   }
 }
