@@ -13,7 +13,7 @@
  */
 
 @import "bootstrap";
-
+@import 'font-awesome.css';
 
 // Typography styles
 h1, h2, h3 {
@@ -21,17 +21,51 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
+// Body background image
 body {
-  background-image: url("https://lh3.googleusercontent.com/Pdv83g-SRmxZAoxwzvkHrQPEkbgiZE1a39i1F29zQI14jCGAZaefCGRH5bCiIYnDzF8CFgcIGGJ1vWCiVvDtSuTbtjNZtV-1sG7vCvaQT7SPEKAhVp63EOfwFLVK9jaJ0p8tRWpOKBok4Ug_20-6AnUwZKsK1Ek5quXV7yZ8XB6Dcq5W21nMoWSrWDh8UW2WO7uyfRGlUmCKHnt6nP0wOYQ5PXfFij_GHC8q48p-R_3SH21wKatTyKWSqcl8cCQaypoitGTcAuK-4T3j8RM-KueQ0G1TLWhdls6y91tweE2E2DsqjFXWoeQTOK3MbmVLm2eWTr0cTsvBx4sJydlPgid99MTKkoKcb_HoKs1wD_WePm6vxg_RQZsHstO6EiCtEEoW1cy35g9Bb97FuZAaDbqP4ujEpjGbi1LrBA-jkOl8r6pE0iXaSMZxqp-d2YdzUE8eL7__BXUe4R6KzQEL2f5e4B7pi03C73YE5c1ZYbuM8w6E2mtBxLNC7pcb78uChmn-5fI61HJMl48rbP_TZsrKU9---KYCcvNa64OiQFQvNKbAAtaBLOIvazPK_6PY61E2SFQC4w5iS11zABXKY90GJPhBw0JYLunUej9gxp6bmhy6c3Gfmc6Rt-OFZ38=w1269-h910-no");
-  background-position: center; /* Center the image */
-  background-size: cover; 
+  background: url("https://lh3.googleusercontent.com/Pdv83g-SRmxZAoxwzvkHrQPEkbgiZE1a39i1F29zQI14jCGAZaefCGRH5bCiIYnDzF8CFgcIGGJ1vWCiVvDtSuTbtjNZtV-1sG7vCvaQT7SPEKAhVp63EOfwFLVK9jaJ0p8tRWpOKBok4Ug_20-6AnUwZKsK1Ek5quXV7yZ8XB6Dcq5W21nMoWSrWDh8UW2WO7uyfRGlUmCKHnt6nP0wOYQ5PXfFij_GHC8q48p-R_3SH21wKatTyKWSqcl8cCQaypoitGTcAuK-4T3j8RM-KueQ0G1TLWhdls6y91tweE2E2DsqjFXWoeQTOK3MbmVLm2eWTr0cTsvBx4sJydlPgid99MTKkoKcb_HoKs1wD_WePm6vxg_RQZsHstO6EiCtEEoW1cy35g9Bb97FuZAaDbqP4ujEpjGbi1LrBA-jkOl8r6pE0iXaSMZxqp-d2YdzUE8eL7__BXUe4R6KzQEL2f5e4B7pi03C73YE5c1ZYbuM8w6E2mtBxLNC7pcb78uChmn-5fI61HJMl48rbP_TZsrKU9---KYCcvNa64OiQFQvNKbAAtaBLOIvazPK_6PY61E2SFQC4w5iS11zABXKY90GJPhBw0JYLunUej9gxp6bmhy6c3Gfmc6Rt-OFZ38=w1269-h910-no")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.corner-leaves {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+// Navbar styles
 .navbar {
   border: none;
-  background-color: rgba(185, 178, 178, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
+.navbar-brand {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 1);
+}
+
+// Home page styles
 .home-callout {
   margin-top: -20px;
   padding-top: 50px;
@@ -51,17 +85,16 @@ body {
 
 .leaves-img-works {
   position: absolute;
-  transform: rotate(90deg);
-  margin-left: 150px;
-  width: 150px;
+  margin-left: 120px;
+  width: 300px;
 }
 
 .leaves-img-contact-me {
   position: absolute;
-  margin-top: -155px;
-  margin-left: -40px;
-  transform: rotate(-90deg);
-  width: 200px;
+  margin-top: -115px;
+  margin-left: -120px;
+  transform: rotate(180deg);
+  width: 400px;
 }
 
 .portrait-img {
@@ -71,6 +104,7 @@ body {
 }
 
 .nogellos-img {
+  margin-left: -100px;
   height: 400px;
 }
 
@@ -83,7 +117,9 @@ body {
   font-weight: bold;
   color: white;
   &:hover {
-    
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
   }
   &.works {
     top: 75px;
@@ -95,4 +131,14 @@ body {
     top: 20px;
     left: -180px;
   }
+}
+
+// About page styles
+.about-callout {
+  padding-top: 30px;
+}
+
+.social-networks {
+  padding-top: 100px;
+  font-size: 30px;
 }

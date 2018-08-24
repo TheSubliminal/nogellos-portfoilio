@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 # Using Boostrap for styling
 gem 'bootstrap', '~> 4.1.3'
+# Using Font Awesome for custom icons
+gem "font-awesome-rails"
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
