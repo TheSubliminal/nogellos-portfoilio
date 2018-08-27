@@ -54,6 +54,10 @@ body {
   font-size: 25px;
   font-weight: bold;
   color: white;
+  -webkit-transition: color 200ms, text-shadow 200ms;
+  -moz-transition: color 200ms, text-shadow 200ms;
+  -o-transition: color 200ms, text-shadow 200ms;
+  transition: color 200ms, text-shadow 200ms;
   &:hover {
     color: rgba(0, 0, 0, 1);
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -96,12 +100,44 @@ body {
   transform: rotate(180deg);
   width: 400px;
 }
-
-.portrait-img {
-  transform: rotate(20deg);
-  width: 500px;
-  height: 500px;
+.portrait-and-text {
+  .portrait-img {
+    position: relative;
+    transform: rotate(20deg);
+    width: 500px;
+    height: 500px;
+    
+  }
+  
+  .img-text {
+    top: 0;
+    left: 50;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0);
+    opacity: 0;
+    -webkit-transition: opacity 1s, box-shadow 1s;
+    -moz-transition: opacity 1s, box-shadow 1s;
+    -o-transition: opacity 1s, box-shadow 1s;
+    transition: opacity 1s, box-shadow 1s;
+    a {
+      text-decoration: none;
+      font-family: 'Indie Flower', cursive;
+      font-size: 50px;
+      color: white;
+      text-decoration: none;
+    }
+    &:hover {
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgba(0, 0, 0, .5);
+    }
+  }
 }
+
+
 
 .nogellos-img {
   margin-left: -100px;
@@ -116,6 +152,10 @@ body {
   font-size: 100px;
   font-weight: bold;
   color: white;
+  -webkit-transition: color 200ms, text-shadow 200ms;
+  -moz-transition: color 200ms, text-shadow 200ms;
+  -o-transition: color 200ms, text-shadow 200ms;
+  transition: color 200ms, text-shadow 200ms;
   &:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
