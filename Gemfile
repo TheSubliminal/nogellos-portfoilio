@@ -48,6 +48,10 @@ gem 'bootstrap', '~> 4.1.3'
 gem "font-awesome-rails"
 # Use Paperclip for image upload
 gem "paperclip", "~> 6.0.0"
+# Rmagick gem for image processing
+gem 'rmagick', '~> 2.16'
+# File processing with carrierwave
+gem "carrierwave"
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
