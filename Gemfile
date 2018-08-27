@@ -33,12 +33,21 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# ActiveAdmin for administration
+gem 'activeadmin'
+# Plus integrations with:
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 # Using Boostrap for styling
 gem 'bootstrap', '~> 4.1.3'
 # Using Font Awesome for custom icons
 gem "font-awesome-rails"
+# Use Paperclip for image upload
+gem "paperclip", "~> 6.0.0"
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
