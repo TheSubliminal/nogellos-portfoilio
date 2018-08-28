@@ -3,6 +3,8 @@ class Image < ApplicationRecord
   validates :image, presence: true
   validate :year_validation
   
+  mount_uploader :image, ImageUploader
+  
   private 
     def year_validation
       if self.image_year && ((self.image_year < 2000) || (self.image_year > Date.today.year))

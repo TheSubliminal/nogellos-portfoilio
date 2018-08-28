@@ -1,4 +1,6 @@
 ActiveAdmin.register Category do
+  menu priority: 2
+  actions :all, except: [:new, :destroy]
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -6,7 +8,7 @@ ActiveAdmin.register Category do
 #
 # or
 #
-# permit_params do
+#permit_params do
 #   permitted = [:permitted, :attributes]
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
