@@ -52,6 +52,8 @@ gem "paperclip", "~> 6.0.0"
 gem 'rmagick', '~> 2.16'
 # File processing with carrierwave
 gem "carrierwave"
+# Hirb gem for better database console view
+gem 'hirb', '~> 0.7.3'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

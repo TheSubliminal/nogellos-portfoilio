@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root to: 'pages#home'
+  get 'about', to: 'pages#about'
+  get 'works', to: 'pages#works'
   get 'images/new'
   get 'images/create'
   get 'images/destroy'
@@ -6,6 +9,4 @@ Rails.application.routes.draw do
   resources :images
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-    root to: 'pages#home'
-    get 'about', to: 'pages#about'
 end
