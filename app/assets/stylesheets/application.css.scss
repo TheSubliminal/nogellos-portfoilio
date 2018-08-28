@@ -229,3 +229,18 @@ body {
 }
 
 //Images layout for each category
+.category-callout {
+  padding-top: 70px;
+}
+
+.category-name {
+  font-size: 70px;  
+  margin-bottom: 50px;
+}
+
+.artwork {
+  margin-bottom: 30px;
+  width: 380px;
+  height: 500px;
+  object-fit: contain;
+}

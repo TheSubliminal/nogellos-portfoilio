@@ -1,17 +1,10 @@
-<div class="container">
+<div class="container-fluid category-callout">
+  <h1 class="category-name text-center"><%= Category.find(@images.first.category_id).name %></h1>
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <ul class="list-unstyled">
-        <% @images.each do |image| %>
-          <li>
-            <div class="well row">
-              <div class="col-sm-4 text-center">
-                <%= image_tag(image.image.url, class: 'atrwork') %>
-              </div>
-            </div>
-          </li>
-        <% end %>
-      </ul>
-    </div>
+      <% @images.each do |image| %>
+        <div class="col-md-4 text-center">
+          <%= image_tag(image.image.url, class: 'artwork') %>
+        </div>
+      <% end %>
   </div>
 </div>
