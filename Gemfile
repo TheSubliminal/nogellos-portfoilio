@@ -54,6 +54,8 @@ gem 'rmagick', '~> 2.16'
 gem "carrierwave"
 # Hirb gem for better database console view
 gem 'hirb', '~> 0.7.3'
+# Use Fidaro for ENV variables
+gem "figaro"
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
