@@ -133,7 +133,6 @@ body {
       font-family: 'Indie Flower', cursive;
       font-size: 50px;
       color: white;
-      text-decoration: none;
     }
     &:hover {
       opacity: 1;
@@ -229,6 +228,7 @@ body {
 }
 
 //Images layout for each category
+
 .category-callout {
   padding-top: 70px;
 }
@@ -238,9 +238,69 @@ body {
   margin-bottom: 50px;
 }
 
-.artwork {
-  margin-bottom: 30px;
-  width: 380px;
-  height: 500px;
-  object-fit: contain;
+.artwork-and-text {
+  .artwork {
+    position: relative;
+    z-index: -1;
+    margin-bottom: 50px;
+    width: 380px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .artwork-text {
+    position: absolute;
+    top: 0;
+    left: 47px;
+    width: 380px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    li {
+      display: block;
+      font-family: 'Indie Flower', cursive;
+      color: white;
+      &.artwork-title {
+        font-size: 50px;
+      }
+      &.artwork-description {
+        font-size: 30px;
+      }
+      &.artwork-year {
+        font-size: 30px;
+      }
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255,0);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+    width: 230px;
+  }
+}
+
+.top-tape, .bottom-tape {
+  position: absolute;
+  width: 100px;
+}
+
+.top-tape {
+  top: 5px;
+  left: 15px;
+  transform: rotate(135deg);
+}
+
+.bottom-tape {
+  bottom: 55px;
+  right: 14px;
+  transform: rotate(-45deg);
 }

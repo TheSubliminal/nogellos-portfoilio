@@ -1,4 +1,4 @@
-<div class="container works-callout d-flex align-items-center justify-content-center">
+<div class="container-fluid works-callout d-flex align-items-center justify-content-center">
   <div class="row categories-row ">
     <div class="col-md-4 d-flex justify-content-center">
       <div class="category d-flex align-items-center justify-content-center">
@@ -13,7 +13,7 @@
     <div class="col-md-4 d-flex justify-content-center">
       <div class="category d-flex align-items-center justify-content-center">
         <% if @illustration %>
-          <%= image_tag(@portrait.image.url, class:'category-link-img rounded-circle') %>
+          <%= image_tag(@illustration.image.url, class:'category-link-img rounded-circle') %>
           <div class="categories-link-text d-flex align-items-center justify-content-center">
             <%= link_to "Illustrations", category_path(2) %>
           </div>
