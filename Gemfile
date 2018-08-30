@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# Amazon S3 to store images
+gem 'aws-sdk', '~> 2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # Use CoffeeScript for .coffee assets and views
@@ -52,6 +54,8 @@ gem "paperclip", "~> 6.0.0"
 gem 'rmagick', '~> 2.16'
 # File processing with carrierwave
 gem "carrierwave"
+# For S3 uploads
+gem "fog-aws"
 # Hirb gem for better database console view
 gem 'hirb', '~> 0.7.3'
 # Use Fidaro for ENV variables
