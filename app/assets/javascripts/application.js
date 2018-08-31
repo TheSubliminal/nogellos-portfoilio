@@ -15,5 +15,6 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require activestorage
+//= require lightbox
 //= require turbolinks
 //= require_tree .
