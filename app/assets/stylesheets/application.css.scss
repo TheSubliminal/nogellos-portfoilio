@@ -18,7 +18,7 @@
 
 // Typography styles
 h1, h2, h3 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Caveat', cursive;
   font-weight: 400;
 }
 
@@ -49,13 +49,13 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Caveat', cursive;
   font-size: 30px;
   font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Caveat', cursive;
   font-size: 25px;
   font-weight: bold;
   color: white;
@@ -131,7 +131,7 @@ body {
     transition: opacity 1s, box-shadow 1s;
     a {
       text-decoration: none;
-      font-family: 'Indie Flower', cursive;
+      font-family: 'Caveat', cursive;
       font-size: 50px;
       color: white;
     }
@@ -151,7 +151,7 @@ body {
   position: relative;
   z-index: 1;
   white-space: nowrap;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Caveat', cursive;
   font-size: 100px;
   font-weight: bold;
   color: white;
@@ -216,7 +216,7 @@ body {
     a {
       text-align: center;
       text-decoration: none;
-      font-family: 'Indie Flower', cursive;
+      font-family: 'Caveat', cursive;
       font-size: 50px;
       color: white;
       text-decoration: none;
@@ -266,7 +266,7 @@ body {
     }
     li {
       display: block;
-      font-family: 'Indie Flower', cursive;
+      font-family: 'Caveat', cursive;
       color: white;
       &.artwork-title {
         font-size: 50px;
