@@ -7,17 +7,19 @@
             <%= image_tag(image.image.url, class: 'artwork') %>
             <% if image.image_title or image.image_description or image.image_year %>
               <div class="artwork-text d-flex align-items-center justify-content-center">
-                <ul class="list-unstyled">
-                  <% if image.image_title != "" %>
-                    <%= content_tag(:li, image.image_title, class: 'text-center artwork-title') %><hr/>
-                  <% end %>
-                  <% if image.image_description != "" %>
-                    <%= content_tag(:li, image.image_description, class: 'text-center artwork-description') %><hr/>
-                  <% end %>
-                  <% if image.image_year != "" %>
-                    <%= content_tag(:li, image.image_year, class: 'text-center artwork-year') %>
-                  <% end %>
-                </ul>
+                <%= link_to image.image.url, data: {lightbox: 'artworks', title: image.image_title} do %>
+                  <ul class="list-unstyled">
+                    <% if image.image_title != "" %>
+                      <%= content_tag(:li, image.image_title, class: 'text-center artwork-title') %><hr/>
+                    <% end %>
+                    <% if image.image_description != "" %>
+                      <%= content_tag(:li, image.image_description, class: 'text-center artwork-description') %><hr/>
+                    <% end %>
+                    <% if image.image_year != "" %>
+                      <%= content_tag(:li, image.image_year, class: 'text-center artwork-year') %>
+                    <% end %>
+                  </ul>
+                <% end %>
               </div>
             <% end %>
           </div>
