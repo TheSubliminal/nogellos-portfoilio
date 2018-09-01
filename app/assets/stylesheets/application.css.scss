@@ -252,7 +252,7 @@ body {
   .artwork-text {
     position: absolute;
     top: 0;
-    left: 50px;
+    //left: 0;
     width: 380px;
     height: 400px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -283,6 +283,23 @@ body {
     }
   }
   
+  .top-tape, .bottom-tape {
+    position: absolute;
+    width: 100px;
+  }
+
+  .top-tape {
+    top: 5px;
+    left: 15px;
+    transform: rotate(135deg);
+  }
+  
+  .bottom-tape {
+    bottom: 55px;
+    right: 14px;
+    transform: rotate(-45deg);
+  }
+  
   hr {
     border: 0;
     height: 1px;
@@ -292,19 +309,4 @@ body {
   }
 }
 
-.top-tape, .bottom-tape {
-  position: absolute;
-  width: 100px;
-}
 
-.top-tape {
-  top: 5px;
-  left: 15px;
-  transform: rotate(135deg);
-}
-
-.bottom-tape {
-  bottom: 55px;
-  right: 14px;
-  transform: rotate(-45deg);
-}

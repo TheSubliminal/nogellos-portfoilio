@@ -2,29 +2,27 @@
   <h1 class="category-name text-center"><%= Category.find(@images.first.category_id).name %></h1>
   <div class="row">
       <% @images.each do |image| %>
-        <div class="col-md-4 text-center">
-          <div class="artwork-and-text">
+        <div class="col-md-4 d-flex justify-content-center artwork-and-text">
             <%= image_tag(image.image.url, class: 'artwork') %>
-            <% if image.image_title or image.image_description or image.image_year %>
-              <div class="artwork-text d-flex align-items-center justify-content-center">
+            <% if image.image_title != "" or image.image_description != "" or image.image_year %>
+              <div class="artwork-text d-flex justify-content-center align-items-center">
                 <%= link_to image.image.url, data: {lightbox: 'artworks', title: image.image_title} do %>
                   <ul class="list-unstyled">
                     <% if image.image_title != "" %>
-                      <%= content_tag(:li, image.image_title, class: 'text-center artwork-title') %><hr/>
+                      <%= content_tag(:li, image.image_title, class: 'text-center artwork-title') %>
                     <% end %>
                     <% if image.image_description != "" %>
-                      <%= content_tag(:li, image.image_description, class: 'text-center artwork-description') %><hr/>
+                      <hr/><%= content_tag(:li, image.image_description, class: 'text-center artwork-description') %><hr/>
                     <% end %>
-                    <% if image.image_year != "" %>
+                    <% if image.image_year %>
                       <%= content_tag(:li, image.image_year, class: 'text-center artwork-year') %>
                     <% end %>
                   </ul>
                 <% end %>
               </div>
             <% end %>
-          </div>
-          <%= image_tag("https://nogellos-portfolio-assets.s3.amazonaws.com/assets/ducttape-img.png", class: 'top-tape') %>
-          <%= image_tag("https://nogellos-portfolio-assets.s3.amazonaws.com/assets/ducttape-img.png", class: 'bottom-tape') %>
+            <%= image_tag("https://nogellos-portfolio-assets.s3.amazonaws.com/assets/ducttape-img.png", class: 'top-tape') %>
+            <%= image_tag("https://nogellos-portfolio-assets.s3.amazonaws.com/assets/ducttape-img.png", class: 'bottom-tape') %>
         </div>
       <% end %>
   </div>
