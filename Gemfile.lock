@@ -331,7 +331,7 @@ DEPENDENCIES
   draper
   figaro
   fog-aws
-  font-awesome-rails
+  font-awesome-rails (= 4.7.0.4)
   hirb (~> 0.7.3)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)

@@ -47,7 +47,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Using Boostrap for styling
 gem 'bootstrap', '~> 4.1.3'
 # Using Font Awesome for custom icons
-gem "font-awesome-rails"
+gem "font-awesome-rails", "4.7.0.4"
 # Custom lightbox for pictures
 gem 'lightbox2-rails'
 # Rmagick gem for image processing
