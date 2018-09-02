@@ -98,7 +98,7 @@ body {
   width: 300px;
 }
 
-.leaves-img-contact-me {
+.leaves-img-my-inst {
   position: absolute;
   margin-top: -115px;
   margin-left: -120px;
@@ -169,13 +169,29 @@ body {
     left: 120px;
     letter-spacing: 24px;
   }
-  &.contact-me {
+  &.my-inst {
     display: inline;
     top: 20px;
     left: -180px;
   }
 }
 
+@include media-breakpoint-down(md) {
+  .portrait-and-text {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .link.my-inst {
+    top: -70px;
+    left: 200px;
+  }
+  .leaves-img-my-inst {
+    top: 50px;
+  }
+  .portfolio-box, .nogellos-img {
+    display: none;
+  }
+}
 // About page styles
 .about-callout {
   padding-top: 30px;
