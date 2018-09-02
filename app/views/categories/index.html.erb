@@ -1,6 +1,6 @@
 <div class="container-fluid works-callout d-flex align-items-center justify-content-center">
   <div class="row categories-row ">
-    <div class="col-md-4 d-flex justify-content-center">
+    <div class="col-lg-4 col-md-12 d-flex justify-content-center">
       <div class="category d-flex align-items-center justify-content-center">
         <% if @portrait %>
           <%= image_tag(@portrait.image.url, class:'category-link-img rounded-circle') %>
@@ -10,7 +10,7 @@
         <% end %>
       </div>
     </div>
-    <div class="col-md-4 d-flex justify-content-center">
+    <div class="col-lg-4 col-md-12 d-flex justify-content-center">
       <div class="category d-flex align-items-center justify-content-center">
         <% if @illustration %>
           <%= image_tag(@illustration.image.url, class:'category-link-img rounded-circle') %>
@@ -20,7 +20,7 @@
         <% end %>
       </div>
     </div>
-    <div class="col-md-4 d-flex justify-content-center">
+    <div class="col-lg-4 col-md-12 d-flex justify-content-center">
       <div class="category d-flex align-items-center justify-content-center">
         <% if @still_life %>
           <%= image_tag(@still_life.image.url, class:'category-link-img rounded-circle') %>
