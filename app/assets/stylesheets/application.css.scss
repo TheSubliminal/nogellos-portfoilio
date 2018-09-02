@@ -50,13 +50,13 @@ body {
 
 .navbar-brand {
   font-family: 'Caveat', cursive;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
   -webkit-transition: color 200ms, text-shadow 200ms;
@@ -176,22 +176,6 @@ body {
   }
 }
 
-@include media-breakpoint-down(md) {
-  .portrait-and-text {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .link.my-inst {
-    top: -70px;
-    left: 200px;
-  }
-  .leaves-img-my-inst {
-    top: 50px;
-  }
-  .portfolio-box, .nogellos-img {
-    display: none;
-  }
-}
 // About page styles
 .about-callout {
   padding-top: 30px;
@@ -329,4 +313,39 @@ p.info {
   }
 }
 
+//Mobile optimization
+@include media-breakpoint-down(md) {
+  //Navbar
+  .navbar-brand {
+    font-size: 60px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 50px;
+  }
+  .navbar-toggler {
+    font-size: 2rem;
+  }
+  //Home page
+  .portrait-and-text {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .link.my-inst {
+    top: -70px;
+    left: 200px;
+  }
+  .leaves-img-my-inst {
+    top: 50px;
+  }
+  .portfolio-box, .nogellos-img {
+    display: none;
+  }
+  //About page
+  .info-title {
+    font-size: 60px;
+  }
+  p.info {
+    font-size: 35px;
+  }
+}
 
