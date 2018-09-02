@@ -112,7 +112,6 @@ body {
     transform: rotate(20deg);
     width: 500px;
     height: 500px;
-    
   }
   
   .img-text {
@@ -329,13 +328,28 @@ p.info {
   .portrait-and-text {
     margin-top: 100px;
     margin-bottom: 100px;
+    .portrait-img {
+      width: 700px;
+      height: 700px;
+    }
+     .img-text {
+      width: 700px;
+      height: 700px;
+    }
+  }
+  .works, .my-inst {
+    font-size: 130px; 
   }
   .link.my-inst {
     top: -70px;
     left: 200px;
   }
-  .leaves-img-my-inst {
+  .leaves-img-works {
     top: 50px;
+  }
+  .leaves-img-my-inst {
+    top: 60px;
+    right: -10px;
   }
   .portfolio-box, .nogellos-img {
     display: none;

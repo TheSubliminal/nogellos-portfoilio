@@ -3,8 +3,8 @@
   <div class="row">
       <% @images.each do |image| %>
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center artwork-and-text">
-            <%= image_tag(image.image.url, class: 'artwork') %>
             <% if image.image_title != "" or image.image_description != "" or image.image_year %>
+              <%= image_tag(image.image.url, class: 'artwork') %>
               <div class="artwork-text d-flex justify-content-center align-items-center">
                 <%= link_to image.image.url, data: {lightbox: 'artworks', title: image.image_title} do %>
                   <ul class="list-unstyled">
@@ -20,6 +20,10 @@
                   </ul>
                 <% end %>
               </div>
+            <% else %>
+              <%= link_to image.image.url, data: {lightbox: 'artworks', title: image.image_title} do %>
+                <%= image_tag(image.image.url, class: 'artwork') %>
+              <% end %>
             <% end %>
             <%= image_tag("https://nogellos-portfolio-assets.s3.amazonaws.com/assets/ducttape-img.png", class: 'top-tape') %>
             <%= image_tag("https://nogellos-portfolio-assets.s3.amazonaws.com/assets/ducttape-img.png", class: 'bottom-tape') %>
