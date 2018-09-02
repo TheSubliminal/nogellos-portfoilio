@@ -2,7 +2,7 @@
   <h1 class="category-name text-center"><%= Category.find(@images.first.category_id).name %></h1>
   <div class="row">
       <% @images.each do |image| %>
-        <div class="col-md-4 d-flex justify-content-center artwork-and-text">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center artwork-and-text">
             <%= image_tag(image.image.url, class: 'artwork') %>
             <% if image.image_title != "" or image.image_description != "" or image.image_year %>
               <div class="artwork-text d-flex justify-content-center align-items-center">
