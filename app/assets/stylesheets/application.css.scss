@@ -361,5 +361,17 @@ p.info {
   p.info {
     font-size: 35px;
   }
+  // Category index page
+  .category {
+    margin-top: 50px;
+    .category-link-img {
+      width: 450px;
+      height: 450px;
+    }
+    .categories-link-text {
+      width: 450px;
+      height: 450px;
+    }
+  }
 }
 
