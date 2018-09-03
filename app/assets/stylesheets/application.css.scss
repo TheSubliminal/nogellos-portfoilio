@@ -193,7 +193,9 @@ p.info {
 .works-callout {
   height: 80%;
 }
-
+.categories-row {
+  width: 100%;
+}
 .category {
   .category-link-img {
     position: relative;
@@ -362,6 +364,9 @@ p.info {
     font-size: 35px;
   }
   // Category index page
+  .categories-row {
+    padding-top: 80px;
+  }
   .category {
     margin-top: 50px;
     .category-link-img {
@@ -369,6 +374,7 @@ p.info {
       height: 450px;
     }
     .categories-link-text {
+      top: 50px;
       width: 450px;
       height: 450px;
     }

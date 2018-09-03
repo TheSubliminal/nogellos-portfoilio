@@ -1,34 +1,28 @@
-<div class="container-fluid works-callout d-flex align-items-center justify-content-center">
-  <div class="row categories-row ">
-    <div class="col-lg-4 col-md-12 d-flex justify-content-center">
-      <div class="category d-flex align-items-center justify-content-center">
-        <% if @portrait %>
-          <%= image_tag(@portrait.image.url, class:'category-link-img rounded-circle') %>
-          <div class="categories-link-text d-flex align-items-center justify-content-center">
-            <%= link_to "Portraits", category_path(1) %>
-          </div>
-        <% end %>
+<div class="container works-callout d-flex align-items-center justify-content-center">
+  <div class="row categories-row d-flex justify-content-center">
+    <% if @portrait %>
+      <div class="col-lg-4 col-md-12 category d-flex align-items-center justify-content-center">
+        <%= image_tag(@portrait.image.url, class:'category-link-img rounded-circle') %>
+        <div class="categories-link-text d-flex align-items-center justify-content-center">
+          <%= link_to "Portraits", category_path(1) %>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-md-12 d-flex justify-content-center">
-      <div class="category d-flex align-items-center justify-content-center">
-        <% if @illustration %>
-          <%= image_tag(@illustration.image.url, class:'category-link-img rounded-circle') %>
-          <div class="categories-link-text d-flex align-items-center justify-content-center">
-            <%= link_to "Illustrations", category_path(2) %>
-          </div>
-        <% end %>
+    <% end %>
+    <% if @illustration %>
+      <div class="col-lg-4 col-md-12 category d-flex justify-content-center">
+        <%= image_tag(@illustration.image.url, class:'category-link-img rounded-circle') %>
+        <div class="categories-link-text d-flex align-items-center justify-content-center">
+          <%= link_to "Illustrations", category_path(2) %>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-md-12 d-flex justify-content-center">
-      <div class="category d-flex align-items-center justify-content-center">
-        <% if @still_life %>
+    <% end %>
+    <% if @still_life %>
+      <div class="col-lg-4 col-md-12 category d-flex justify-content-center">
           <%= image_tag(@still_life.image.url, class:'category-link-img rounded-circle') %>
           <div class="categories-link-text d-flex align-items-center justify-content-center">
             <%= link_to "Still life and paysages", category_path(3) %>
           </div>
-        <% end %>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
