@@ -109,9 +109,9 @@ body {
 .portrait-and-text {
   .portrait-img {
     position: relative;
-    transform: rotate(20deg);
     width: 500px;
     height: 500px;
+    transform: rotate(20deg);
   }
   
   .img-text {
@@ -365,7 +365,7 @@ p.info {
   }
   // Category index page
   .categories-row {
-    padding-top: 80px;
+    padding-bottom: 30px;
   }
   .category {
     margin-top: 50px;

@@ -1,7 +1,7 @@
-<div class="container works-callout d-flex align-items-center justify-content-center">
-  <div class="row categories-row d-flex justify-content-center">
+<div class="container works-callout d-flex justify-content-center align-items-md-center">
+  <div class="row categories-row">
     <% if @portrait %>
-      <div class="col-lg-4 col-md-12 category d-flex align-items-center justify-content-center">
+      <div class="col-lg-4 category d-flex justify-content-center">
         <%= image_tag(@portrait.image.url, class:'category-link-img rounded-circle') %>
         <div class="categories-link-text d-flex align-items-center justify-content-center">
           <%= link_to "Portraits", category_path(1) %>
@@ -9,7 +9,7 @@
       </div>
     <% end %>
     <% if @illustration %>
-      <div class="col-lg-4 col-md-12 category d-flex justify-content-center">
+      <div class="col-lg-4 category d-flex justify-content-center">
         <%= image_tag(@illustration.image.url, class:'category-link-img rounded-circle') %>
         <div class="categories-link-text d-flex align-items-center justify-content-center">
           <%= link_to "Illustrations", category_path(2) %>
@@ -17,7 +17,7 @@
       </div>
     <% end %>
     <% if @still_life %>
-      <div class="col-lg-4 col-md-12 category d-flex justify-content-center">
+      <div class="col-lg-4 category d-flex justify-content-center">
           <%= image_tag(@still_life.image.url, class:'category-link-img rounded-circle') %>
           <div class="categories-link-text d-flex align-items-center justify-content-center">
             <%= link_to "Still life and paysages", category_path(3) %>
